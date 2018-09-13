@@ -60,6 +60,10 @@ autocmd BufNewFile,BufRead *.cpp hi Comment ctermfg = Cyan
 " Taglist Settings
 "==========================================
 
+let Tlist_Show_One_File=1 "Show tags of multiple files at the same time, only show the current file
+let Tlist_Exit_OnlyWindow=1 "If the taglist window is the last window, exit vim
+let Tlist_Ctags_Cmd="/usr/bin/ctags" "Associate taglist with ctags
+
 " increase the width of the taglist window
 let Tlist_WinWidth=30
 
@@ -72,9 +76,8 @@ let Tlist_Enable_Fold_Column=1
 
 let Tlist_Auto_Update=1
 
-let Tlist_Show_One_File=1
-
-let Tlist_Exit_OnlyWindow=1
+"let Tlist_Show_One_File=1
+"let Tlist_Exit_OnlyWindow=1
 "close tag folders for inactive buffers
 let Tlist_File_Fold_Auto_Close=1
 
